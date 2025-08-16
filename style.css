@@ -1,0 +1,111 @@
+/* Reset */
+body, h1, p, label, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ffe3e3, #fff1c1);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.smoothie-container {
+    width: 95%;
+    max-width: 500px;
+    background: #ffffffdd;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0px 12px 28px rgba(0,0,0,0.12);
+    backdrop-filter: blur(5px);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #ff6b81;
+    margin-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: 1.2px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Inputs and selects */
+select, button {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 5px;
+    border-radius: 14px;
+    border: 2px solid #ddd;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+select:focus {
+    border-color: #ff6b81;
+    outline: none;
+}
+
+/* Checkbox group */
+.checkbox-group {
+    margin: 12px 0;
+}
+.checkbox-group label {
+    display: inline-block;
+    background: #ffe0b2;
+    padding: 7px 14px;
+    border-radius: 14px;
+    margin: 5px 8px 5px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.checkbox-group input {
+    display: none;
+}
+.checkbox-group input:checked + label {
+    background: #ff9671;
+    color: #fff;
+}
+
+/* Button */
+button {
+    background: linear-gradient(135deg, #ff6b81, #ff9a76);
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(255,107,129,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+button:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 18px rgba(255,107,129,0.4);
+}
+
+/* Order summary */
+#orderSummary {
+    margin-top: 25px;
+    padding: 18px;
+    border-radius: 16px;
+    background: #fff4f4;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    box-shadow: inset 0px 2px 8px rgba(0,0,0,0.06);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
