@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Smoothie Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="smoothie-container">
+        <h1>Build Your Smoothie!</h1>
+        <form id="smoothieForm">
+            <!-- Size Selection -->
+            <fieldset>
+                <legend>Pick a Size:</legend>
+                <select id="size" name="size" required>
+                    <option value="small">Small - $3</option>
+                    <option value="medium">Medium - $5</option>
+                    <option value="large">Large - $7</option>
+                </select>
+            </fieldset>
+
+            <!-- Base Liquid -->
+            <fieldset>
+                <legend>Select Base Liquid:</legend>
+                <select id="base" name="base" required>
+                    <option value="milk">Milk</option>
+                    <option value="almond milk">Almond Milk</option>
+                    <option value="soy milk">Soy Milk</option>
+                    <option value="water">Water</option>
+                </select>
+            </fieldset>
+
+            <!-- Fruits -->
+            <fieldset>
+                <legend>Choose Your Fruits:</legend>
+                <label><input type="checkbox" name="fruit" value="orange"> Orange</label>
+                <label><input type="checkbox" name="fruit" value="strawberry"> Strawberry</label>
+                <label><input type="checkbox" name="fruit" value="banana"> Banana</label>
+                <label><input type="checkbox" name="fruit" value="blueberry"> Blueberry & Raspberry</label>
+            </fieldset>
+
+            <!-- Extras -->
+            <fieldset>
+                <legend>Add Extras ($1 each):</legend>
+                <label><input type="checkbox" name="extra" value="dry fruits"> Dry Fruits</label>
+                <label><input type="checkbox" name="extra" value="chia seeds"> Chia & Avocado</label>
+                <label><input type="checkbox" name="extra" value="honey"> Honey</label>
+            </fieldset>
+
+            <button type="submit">Submit Order</button>
+        </form>
+
+        <div id="orderSummary"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
